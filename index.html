@@ -3,88 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Pembayaran Berhasil</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f9;
+      }
+
+      .success-container {
+        text-align: center;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      h1 {
+        color: #28a745;
+      }
+
+      p {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .whatsapp-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        color: white;
+        background-color: #25d366;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+      }
+
+      .whatsapp-link:hover {
+        background-color: #20b358;
+      }
+    </style>
   </head>
   <body>
-    <header class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <div> <img src="OIP (4).jfif" alt="jfif" />
-          </div>
-        </div>
-         
-        </a>
-        <nav class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#schedule">Schedule</a>
-          <a href="#venue">Venue</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div class="right-menu">
-          <a href="#tickets" class="buy-tickets">Buy Tickets</a>
-          <button class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section id="home">
-        <div class="home">
-        <h1>Welcome to Marathon Event 2023</h1>
-        <img src="OIP (4).jfif" alt="jfif" />
-        </div>
-      </section>
-      <section id="about">
-        <div class="about">
-        <h2>About The Marathon</h2>
-        <p>This marathon brings together athletes from all over the world...</p>
-        </div>
-      </section>
-      <section id="schedule">
-        <div class="schedule">
-        <h2>Event Schedule</h2>
-        <p>The marathon will take place on...</p>
-      </div>
-      </section>
-      <section id="venue">
-        <div class="venue">
-        <h2>Event Venue</h2>
-        <p>Join us at the scenic park for a beautiful marathon course...</p>
-      </div>
-      </section>
-      <section id="tickets" class="ticket-section">
-        <h2>Ticket Prices</h2>
-        <div class="ticket-container">
-          <div class="ticket-card">
-            <h3>Marathon</h3>
-            <p class="price">IDR 500k</p>
-            <p class="includes-title">Includes:</p>
-            <ul>
-              <li>T-shirt</li>
-              <li>Medal</li>
-              <li>Snack Pack</li>
-            </ul>
-            <a href="https://app.sandbox.midtrans.com/payment-links/1730876726180">Buy Ticket</a>
-          </div>
-        </section>
-      </div>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out...</p>
-      </section>
+    <div class="success-container">
+      <h1>Pembayaran Berhasil!</h1>
+      <p>Terima kasih telah melakukan pembayaran.</p>
+      <p>Silakan hubungi kami di WhatsApp jika ada pertanyaan lebih lanjut.</p>
 
-          
-    </main>
-
-    <script src="javascript.js"></script>
-
+      <a
+        href="https://wa.me/62857562313838?text=Halo,%20saya%20sudah%20melakukan%20pembayaran."
+        class="whatsapp-link"
+        target="_blank"
+        >Hubungi Kami di WhatsApp</a
+      >
+    </div>
   </body>
 </html>
